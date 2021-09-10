@@ -20,6 +20,10 @@ wget -O "$ZIPNAME" $URL &> /dev/null
 echo "Snapshot downloaded!"
 echo "Expanding archive..."
 unzip $ZIPNAME &> /dev/null
+if [ $? -ne 0 ]; then
+  echo "There was a problem extracting the archive, check if you have the unzip package installed"
+  exit
+fi
 echo "Archive expanded!"
 rm $ZIPNAME &> /dev/null
-echo "$MCVERSION installation complete!"
+echo "$MCVERSION files successfully installed! You will need to create a new installation from the Minecraft launcher"
