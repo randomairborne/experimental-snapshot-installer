@@ -1,2 +1,2 @@
-# 1.18-snapshot-installer
-Installs the 1.18 Experimental Snapshot automatically, with Batch and PowerShell or Linux Bash
+# experimental-snapshot-installer
+Installs the Minecraft Experimental Snapshot automatically, with Batch and PowerShell or Linux Bash
